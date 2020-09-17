@@ -1,0 +1,220 @@
+body{
+	background-image:url(../images/bgLogin.jpg);
+	background-repeat:no-repeat; 
+	background-size:100% 100%;
+	-moz-background-size:100% 100%;
+}
+.top-content {
+	position: relative;
+	min-width: 750px;
+	height: 400px;
+	overflow: hidden;
+}
+.login-title{
+   font-size: 26px;
+   font-weight:blod;
+   color:#6FB3E0;
+   margin-bottom: 40px;
+   text-align: center;
+}
+.top-bulid1 {
+	display: inline-block;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	animation-name: classBulid1;
+	animation-duration: 30s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.top-bulid2 {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	animation-name: classBulid2;
+	animation-duration: 30s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	blur: 10px;
+}
+
+.top-welcome {
+	position: relative;
+	display: block;
+	margin: 60px auto;
+	width: 400px;
+	z-index: 10;
+}
+
+.top-title {
+	position: relative;
+	margin: 60px auto;
+	width: 690px;
+	color: #FFFFFF;
+	font-size: 50px;
+	letter-spacing: 10px;
+	padding: 50px;
+	text-align: center;
+	z-index: 10;
+	font-weight: bold;
+	text-shadow: 0 0 10px #6FB3E0;
+}
+.top-block{
+	position: absolute;
+	bottom: -16px;
+	width: 30px;
+	height: 30px;
+	background: #fff;
+	z-index: 10;
+	transform: rotateZ(45deg);
+	left: calc(50% - 15px);
+}
+
+@keyframes classBulid1 {
+	from {
+		left: 0;
+	}
+	to {
+		left: 100%;
+	}
+}
+
+@keyframes classBulid2 {
+	from {
+		left: -100%;
+	}
+	to {
+		left: 0%;
+	}
+}
+.input-list{
+	position: relative;
+	width: 480px;
+	margin:-180px auto;
+	padding: 30px 60px;
+	border-radius: 4px;
+}
+.input-border{
+	position: relative;
+	width: 100%;
+	height: 49px;
+	border: 1px solid #a1a1a1;
+	border-radius: 4px;
+	background: white;
+	outline: blue;
+	margin-top: 30px;
+}
+.input-hover:hover{
+	box-shadow: 0 0 3px #2876c1;
+}
+.input-border img{display: inline-block;}
+.input-icon{
+	padding: 10px;
+}
+.input-border input{
+	height: 100%;
+	width: 280px;
+	float: right;
+	border: none;
+	outline: none;
+}
+.input-border .input-leftInput{
+	border: 1px solid #a1a1a1;
+	width: 200px;
+	border-radius:4px ;
+	float: left;
+	text-indent: 2em;
+}
+
+.input-border .input-allBtn{
+	width: 100%;
+	border-radius:4px ;
+	background: #e52a33;
+	color: #fff;
+	font-size: 20px;
+}
+.border-none{border: none !important;box-shadow:none !important;}
+.input-rightYz{
+	display: inline-block;
+	float: right;
+	width: 140px;
+	height: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	line-height: 44px;
+	border-radius:4px ;
+	background: #07b880;
+	overflow: hidden;
+}
+.input-border .input-mid-button{
+	width: 200px;
+	margin: auto;
+	border-radius:4px ;
+	background: #e52a33;
+	color: #fff;
+	font-size: 20px;
+	margin-right: 80px;
+}
+.bottom-explain{
+	position: absolute;
+	bottom: 20px;
+	left: calc(50% - 110px);
+	font-size: 16px;
+	color: #999;
+}
+
+
+/*login*/
+.input-rightYz img{
+	width: 100%;
+}
+.input-border .input-leftBtn{
+	width: 100%;
+	float: left;
+	border-radius:4px ;
+	background: #6FB3E0;
+	color: #fff;
+	font-size: 20px;
+}
+.input-border .input-rightBtn{
+	width: 46%;
+	float: right;
+	border-radius:4px ;
+	background: #07b880;
+	color: #fff;
+	font-size: 20px;
+}
+.input-rightA{
+	display: inline-block;
+	float: right;
+	color: #e52a33;
+}
+.input-left{
+	display: inline-block;
+	position: relative;
+	top: 2px;
+}
+.out-right{
+	position: absolute;
+	left: 400px;
+	width: 80px;
+	top: 14px;
+}
+.out-right img{
+	display: inline-block;
+	position: relative;
+	top:4px;
+}
+
+input:-webkit-autofill , textarea:-webkit-autofill, select:-webkit-autofill {
+	-webkit-text-fill-color: #333 !important;
+	-webkit-box-shadow: 0 0 0px 1000px transparent  inset !important;
+    background-color:transparent;
+    background-image: none;
+    transition: background-color 50000s ease-in-out 0s;
+}
+input {
+	 background-color:transparent;
+}

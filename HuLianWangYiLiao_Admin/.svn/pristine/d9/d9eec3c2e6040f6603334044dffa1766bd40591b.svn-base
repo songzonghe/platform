@@ -1,0 +1,15 @@
+log4j.rootCategory=INFO, A , R  
+log4j.appender.A=org.apache.log4j.ConsoleAppender   
+log4j.appender.A.layout=org.apache.log4j.PatternLayout   
+log4j.appender.A.layout.ConversionPattern=[TF] %p [%t] %C.%M(%L) | %m%n   
+    
+log4j.appender.R=org.apache.log4j.DailyRollingFileAppender   
+log4j.appender.R.File=D:/logs/mylog.log
+log4j.appender.R.layout=org.apache.log4j.PatternLayout
+log4j.appender.R.Threshold = WARN 
+log4j.appender.R.layout.ConversionPattern=%d-[TF] %p %t %c - %m%n   
+
+#??????
+log4j.logger.org.springframework.web.servlet.handler.SimpleMappingExceptionResolver=WARN
+#???????
+log4j.logger.com.tf=ERROR
